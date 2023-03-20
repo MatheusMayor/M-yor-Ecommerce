@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Products M@yor - bx-cart</title>
+    <link rel="stylesheet" href="cart.css">
+    <script src="/cart.js"></script>
+    <script src="/telaprincipal/db.js"></script>
+    <script src="/telaprincipal/db.json"></script>
+    <script src="/telaprincipal/funcoes.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Shopping cart</h1>
+        <nav class="navigation">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <ul id="cart-items">
+                <li>
+                    <span>Headphones</span>
+                    <button class="remove-button" onclick="removeFromCart(this)">Excluir</button>
+                    <button class="buy-button" onclick="confirmPurchase()">Comprar</button>
+                </li>
+                <li>
+                    <span>Keyboards</span>
+                    <button class="remove-button" onclick="removeFromCart(this)">Excluir</button>
+                    <button class="buy-button" onclick="confirmPurchase()">Comprar</button>
+                </li>
+                <li>Unidades</li>
+            </ul>
+            <ul>
+                <li>Desconto</li>
+                <li>Valor total</li>
+                <button class="buy-button" onclick="confirmPurchase()">Escolha a forma de pagamento</button>
+            </ul>
+        </section>
+        <button class="buy-button" onclick="confirmPurchase()">Confirmar Compra</button>
+    </main>
+
+    <footer>
+        <p>Confirm all selected items and quantity</p>
+        <button class="buy-button" onclick="confirmPurchase()">Confirmar Compra</button>
+    </footer>
+</body>
+
+</html>

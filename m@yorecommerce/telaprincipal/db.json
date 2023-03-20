@@ -1,0 +1,67 @@
+{
+  "produtos": [
+    {
+      "id": 1,
+      "nome": "Mouse Logitech G502",
+      "descricao": "Mouse gamer com 11 botões programáveis.",
+      "preco": 399.90,
+      "estoque": 50,
+      "imagem": "https://www.example.com/mouse-logitech-g502.jpg",
+      "categoriaId": 1
+    },
+    {
+      "id": 2,
+      "nome": "Teclado Mecânico Razer Huntsman Elite",
+      "descricao": "Teclado mecânico para jogos com iluminação RGB personalizável.",
+      "preco": 899.90,
+      "estoque": 20,
+      "imagem": "https://www.example.com/teclado-razer-huntsman-elite.jpg",
+      "categoriaId": 1
+    },
+    {
+      "id": 3,
+      "nome": "Monitor Gamer Alienware 34 Curvo",
+      "descricao": "Monitor curvo de 34 polegadas com taxa de atualização de 144Hz.",
+      "preco": 6999.90,
+      "estoque": 10,
+      "imagem": "https://www.example.com/monitor-alienware-34-curvo.jpg",
+      "categoriaId": 2
+    },
+    {
+      "id": 4,
+      "nome": "Notebook Dell Inspiron 15 5000",
+      "descricao": "Notebook com processador Intel Core i7 e placa de vídeo dedicada NVIDIA GeForce MX350.",
+      "preco": 4899.90,
+      "estoque": 5,
+      "imagem": "https://www.example.com/notebook-dell-inspiron-15-5000.jpg",
+      "categoriaId": 3
+    },
+    {
+      "id": 5,
+      "nome": "Câmera Canon EOS R5",
+      "descricao": "Câmera mirrorless com resolução de 45MP e gravação de vídeo em 8K.",
+      "preco": 31999.90,
+      "estoque": 2,
+      "imagem": "https://www.example.com/camera-canon-eos-r5.jpg",
+      "categoriaId": 4
+    }
+  ],
+  "categorias": [
+    {
+      "id": 1,
+      "nome": "Periféricos"
+    },
+    {
+      "id": 2,
+      "nome": "Monitores"
+    },
+    {
+      "id": 3,
+      "nome": "Notebooks"
+    },
+    {
+      "id": 4,
+      "nome": "Câmeras"
+    }
+  ]
+}

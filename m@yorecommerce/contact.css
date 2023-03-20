@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+  }
+  
+  :root {
+    background-image: linear-gradient(to right, rgb(121, 81, 214), rgb(53, 137, 175));
+    --tex-color: #fff;
+    --main-color: #8d2abb;
+    --other-color: #704eaf;
+    --h1-font: 4rem;
+    --p-font: 1rem;
+  }
+  
+  body {
+    background-color: var(--bg-color);
+    color: var(--tex-color);
+    min-height: 1000px;
+      /* ajuste a altura de acordo com o tamanho necessário */
+  }
+  
+  header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 8%;
+    
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav a {
+    display: block;
+    padding: 10px;
+    margin: 0 5px;
+    border-radius: 5px;
+    color: var(--other-color);
+    transition: background-color 0.3s ease;
+  }
+  
+  nav a:hover {
+    background-color: var(--other-color);
+    color: var(--main-color);
+  }
+  
+  header nav {
+    display: flex;
+  }
+  
+  header nav a {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px;
+    color: #fff;
+    border-radius: 5px;
+  }
+  
+  header nav a:hover {
+    background-color: #fcfcfc;
+    color: #8d2abb;
+  }
+  
+  header ul li {
+    display: inline-block;
+  }
+
+main {
+    padding: 200px;
+
+}
+
+.contact-section {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-section h1 {
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 36px;
+    font-weight: 700;
+    color: #4e4c4c;
+}
+
+.contact-section p.contact-info {
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.contact-section ul.contact-info {
+    align-items: center;
+    list-style: none;
+    margin-bottom: 40px;
+}
+
+.contact-section li {
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.contact-section li:last-child {
+    align-items: center;
+    margin-bottom: 0;
+}

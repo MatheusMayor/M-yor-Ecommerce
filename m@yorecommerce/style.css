@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+:root {
+  --bg-color: background-image: linear-gradient(to right, rgb(121, 81, 214), rgb(53, 137, 175));;
+  --tex-color: #fff;
+  --main-color: #8d2abb;
+  --other-color: #704eaf;
+  --h1-font: 4rem;
+  --p-font: 1rem;
+}
+
+body {
+  background-image: linear-gradient(to right, rgb(121, 81, 214), rgb(53, 137, 175));;
+  color: var(--bg-color);
+  min-height: 1000px;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 8%;
+  
+}
+
+header h1 {
+  color: #fff;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  display: block;
+  padding: 10px;
+  margin: 0 5px;
+  border-radius: 5px;
+  color: var(--other-color);
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: var(--other-color);
+  color: var(--main-color);
+}
+
+header nav {
+  display: flex;
+  color: #fff;
+}
+
+header nav a {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 10px;
+  color: #fff;
+  border-radius: 5px;
+}
+
+header nav a:hover {
+  background-color: #fcfcfc;
+  color: #8d2abb;
+}
+
+header ul li {
+  display: inline-block;
+}
+
+.header-icons {
+  margin-right: 25px;
+  font-size: 28px;
+  cursor: pointer;
+  transition: all .5s ease;
+}
+
+#menu {
+  font-size: 35px;
+  color: var(--tex-color);
+  z-index: 10001;
+  cursor: pointer;
+}
+
+.header-icons i {
+  margin-right: 25px;
+  font-size: 28px;
+  cursor: pointer;
+  transition: all .5s ease;
+}
+
+.header-icons i:hover {
+  transform: translateY(-5px);
+  color: var(--main-color);
+}
+
+.section {
+  padding: 0 15%;
+}
+
+.home {
+  background-image: linear-gradient(to right, rgb(121, 81, 214), rgb(53, 137, 175));
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2rem;
+  color: #fff;
+}
+
+.home-text h1 {
+  font-size: var(--h1-font);
+  line-height: 1.2;
+  margin-bottom: 2px;
+  color: #fff;
+}
+
+.home-text h5 {
+  color: #ffffff99;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 60px;
+}
+
+.home-text h3 {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 35px;
+}
+
+.home-img img {
+  max-width: 100%;
+  width: 28rem;
+  height: auto;
+  margin-left: 25%;
+
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 70px;
+  font-size: 16px;
+  font-weight: 500;
+  background: transparent;
+  border: solid 2px var(--tex-color);
+  transition: all .55s ease;
+  color: #fff;
+}
+
+.btn:hover {
+  background: var(--tex-color);
+  border-color: var(--tex-color);
+  color: #000;
+}
+
+.main {
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    transform: translateY(-50%);
+    display: flex
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.main li img{
+    width: 50px;
+    height: auto;
+    max-width: 100%;
+}
+
+.row{
+    background: var(--main-color);
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    justify-content: center;
+    transition: all.55s ease;
+    cursor: pointer;
+    display: inline-flex;
+}
+
+.row:hover {
+    transform: translateY(-8px);
+
+}
+
+.row2{
+    background: #ff758d;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all.55s ease;
+    cursor: pointer;
+}
+
+.row2:hover{
+    transform: translateY(-8px);
+}
+
+.row3{
+    background: #ffd06d;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all.55s ease;
+    cursor: pointer;
+
+}
+
+.row3:hover{
+    transform: translateY(-8px);
+}
+
+.items {
+  display: flex;
+  justify-content: center;
+  margin: 60px 0;
+  
+}
+.items img {
+  width: 250px;
+  height: auto;
+  max-width: 100%;
+  margin-top: -1px;
+  margin-right: 10px; /* adiciona espaçamento entre as imagens, exceto na última */
+}
+
+.items img:last-child {
+  margin-right: 0; /* remove o espaçamento da última imagem */
+}
+
+
+.main li img {
+  width: 90px;
+  height: auto;
+  max-width: 100%;
+  margin-top: -90px;
+}
+
+.​footer img {
+  display: block;
+  margin: 0 auto;
+  align-items: center;
+
+}
